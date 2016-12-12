@@ -1,0 +1,202 @@
+Started GET "/" for 192.168.1.103 at 2016-12-12 10:44:40 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 23ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (17.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMessages (20161212115223)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161212115223"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-12-12 11:59:46 UTC], ["updated_at", 2016-12-12 11:59:46 UTC]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 192.168.1.103 at 2016-12-12 13:21:34 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 23ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 192.168.1.103 at 2016-12-12 13:21:43 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 830ms (Views: 826.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 192.168.1.103 at 2016-12-12 13:25:01 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 317ms (Views: 298.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages" for 192.168.1.103 at 2016-12-12 14:11:17 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 247ms (Views: 229.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/new" for 192.168.1.103 at 2016-12-12 14:11:22 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 51ms (Views: 46.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/messages" for 192.168.1.103 at 2016-12-12 14:11:35 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PWba3w/OaE2LluM/QwHhhpXuSLwG/tznNohsDlYNsmIRrtVWm1cPhexrZlvWbJ+ie9Toy8x/p2DO3OzN59BBGg==", "message"=>{"content"=>"Test me!"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Test me!"], ["created_at", 2016-12-12 14:11:35 UTC], ["updated_at", 2016-12-12 14:11:35 UTC]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.1.107:3000/messages
+Completed 302 Found in 14ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/messages" for 192.168.1.103 at 2016-12-12 14:11:35 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/new" for 192.168.1.103 at 2016-12-12 14:11:42 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 192.168.1.103 at 2016-12-12 14:11:48 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6INmxAKedJ+EjWIWY8Yywi9oqCirisfDjxFGlsdHxHXES2lNlgcTV+Nw53L2q0zmwVIIX2ELvER3RcZVdpo3DQ==", "message"=>{"content"=>"Try me!"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Try me!"], ["created_at", 2016-12-12 14:11:48 UTC], ["updated_at", 2016-12-12 14:11:48 UTC]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.1.107:3000/messages
+Completed 302 Found in 14ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/messages" for 192.168.1.103 at 2016-12-12 14:11:48 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/messages/new" for 192.168.1.103 at 2016-12-12 14:14:07 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 192.168.1.103 at 2016-12-12 14:14:19 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aXSh7LqeQCmQ9act6eAo2qwEmr5iEr33Zm0yHHc2781FvK5lLgcn4fcIIkl8jVb+Qj46yaiTxnCeObLfxusctQ==", "message"=>{"content"=>"Do it!"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Do it!"], ["created_at", 2016-12-12 14:14:19 UTC], ["updated_at", 2016-12-12 14:14:19 UTC]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.1.107:3000/messages
+Completed 302 Found in 10ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/messages" for 192.168.1.103 at 2016-12-12 14:14:19 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/messages/new" for 192.168.1.103 at 2016-12-12 14:14:21 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 192.168.1.103 at 2016-12-12 14:14:33 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tHQe6ulT7E61fQDpNzcN33REzYaRiJeT0adiYuFkjryYvBFjfcqLhtKAhY2iWnP7mn5t8VsJ7BQp8+KhULl9xA==", "message"=>{"content"=>"A longer message!\r\nYeahh!"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "A longer message!\r\nYeahh!"], ["created_at", 2016-12-12 14:14:33 UTC], ["updated_at", 2016-12-12 14:14:33 UTC]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.1.107:3000/messages
+Completed 302 Found in 11ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/messages" for 192.168.1.103 at 2016-12-12 14:14:33 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/new" for 192.168.1.103 at 2016-12-12 15:08:05 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 192.168.1.103 at 2016-12-12 15:08:16 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NB9lMevt+96hwL87ZQksTkVVI869EEyEQJrunSrdcz0Y12q4f3ScFsY9Ol/wZFJqq2+DuXeRNwO4zm5emwCARQ==", "message"=>{"content"=>"Make it!"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Make it!"], ["created_at", 2016-12-12 15:08:16 UTC], ["updated_at", 2016-12-12 15:08:16 UTC]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.1.107:3000/messages
+Completed 302 Found in 11ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/messages" for 192.168.1.103 at 2016-12-12 15:08:16 +0000
+Cannot render console from 192.168.1.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.1ms)
+
+
